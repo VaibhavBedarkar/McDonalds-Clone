@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+    gap: 40px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2% 4%;
+    border-radius: 8px;
+}
+
+#banner {
+    width: 60%;
+    margin: auto;
+}
+
+.card>.image {
+    width: 80%;
+}
+
+.card>.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    background-color: #ffbc0d;
+    border: 0px solid transparent;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #ffbc0d;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #b90606;
+    border-radius: 4px;
+    width: 40%;
+  }
+  .close {
+    color: #b90606;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #food-img{
+    width:400px;
+    height:200px;
+  }
